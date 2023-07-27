@@ -1,0 +1,39 @@
+@import "../../../styles/main.scss";
+
+.base {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  padding: 6px 16px;
+  font-family: $font-family-secondary;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.primary {
+  border-color: $primary-dark;
+  background-color: $primary-dark;
+  color: $base-light;
+  &:hover {
+    border-color: $secondary-main;
+    background-color: $secondary-main;
+    color: $primary-dark;
+  }
+  &:active {
+    border-color: $secondary-light;
+    background-color: $secondary-light;
+    color: $primary-dark;
+  }
+}
+
+.secondary {
+  border-color: $primary-dark;
+  background-color: $base-light;
+  color: $primary-dark;
+  &:hover {
+    border-color: $secondary-main;
+  }
+  &:active {
+    border-color: $secondary-light;
+  }
+}
