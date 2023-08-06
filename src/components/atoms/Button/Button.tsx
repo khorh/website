@@ -9,13 +9,9 @@ export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   type: "primary" | "secondary";
 }
 
-const Button: FC<ButtonProps> = ({type, children}) => {
+const Button: FC<ButtonProps> = ({ type, children }) => {
   return (
-    <button
-      className={`${styles.base} ${styles[type]}`}
-    >
-      {children}
-    </button>
+    <button className={`${styles.base} ${styles[type]}`}>{children}</button>
   );
 };
 
