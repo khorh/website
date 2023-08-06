@@ -13,20 +13,12 @@ export interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
   font: "primary" | "secondary";
 }
 
-const Heading: FC<HeadingProps> = (props) => {
-  switch (props.type) {
+const Heading: FC<HeadingProps> = ({ type, font, children }) => {
+  switch (type) {
     case "h1":
-      return (
-        <h1 className={`${styles[props.font]}`}>
-          {props.children}
-        </h1>
-      );
+      return <h1 className={`${styles[font]}`}>{children}</h1>;
     case "h2":
-      return (
-        <h2 className={`${styles[props.font]}`}>
-          {props.children}
-        </h2>
-      );
+      return <h2 className={`${styles[font]}`}>{children}</h2>;
   }
 };
 
