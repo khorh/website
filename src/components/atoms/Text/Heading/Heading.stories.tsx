@@ -27,3 +27,17 @@ export const H2Primary: Story = {
     font: "primary",
   },
 };
+
+export const H1Secondary: Story = {
+  args: {
+    type: "h1",
+    font: "secondary",
+  },
+};
+
+export const H2Secondary: Story = {
+  args: {
+    type: "h2",
+    font: "secondary",
+  },
+};
