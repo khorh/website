@@ -8,7 +8,7 @@ const meta = {
   tags: ["autodocs"],
   args: {
     children: "Button",
-  }
+  },
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -21,7 +21,7 @@ export const Primary: Story = {
 };
 
 export const Secondary: Story = {
-    args: {
-      type: "secondary",
-    },
-  };
+  args: {
+    type: "secondary",
+  },
+};
