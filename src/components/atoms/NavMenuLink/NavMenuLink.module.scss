@@ -1,0 +1,19 @@
+@import "../../../styles/main.scss";
+
+.common {
+  border-bottom: 4px solid $base-light;
+  text-decoration: none;
+  padding-bottom: 8px;
+  font-family: $font-family-primary;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: $base-dark;
+
+  &:hover {
+    border-bottom: 4px solid $secondary-main;
+  }
+
+  &:active {
+    border-bottom: 4px solid $secondary-dark;
+  }
+}
