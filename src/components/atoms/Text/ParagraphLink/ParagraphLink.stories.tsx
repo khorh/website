@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import ParagraphLink from "./ParagraphLink";
 
 const meta = {
-  title: "Atoms/ParagraphLinks",
+  title: "Atoms/Text/ParagraphLinks",
   component: ParagraphLink,
   tags: ["autodocs"],
   args: {
