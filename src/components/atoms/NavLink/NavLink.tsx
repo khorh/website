@@ -1,7 +1,7 @@
 import { FC } from "react";
-import styles from "./NavMenuLink.module.scss";
+import styles from "./NavLink.module.scss";
 
-export interface NavMenuLinkProps
+export interface NavLinkProps
   extends React.HTMLAttributes<HTMLLinkElement> {
   /**
    * What is the destination?
@@ -9,7 +9,7 @@ export interface NavMenuLinkProps
   destination?: string;
 }
 
-const NavMenuLink: FC<NavMenuLinkProps> = ({ destination, children }) => {
+const NavLink: FC<NavLinkProps> = ({ destination, children }) => {
   return (
     <a className={styles.common} href={destination}>
       {children}
@@ -17,4 +17,4 @@ const NavMenuLink: FC<NavMenuLinkProps> = ({ destination, children }) => {
   );
 };
 
-export default NavMenuLink;
+export default NavLink;
