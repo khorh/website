@@ -1,0 +1,24 @@
+@import "../../../styles/main.scss";
+
+.container {
+  font-size: 0;
+  & > svg {
+    fill: $primary-dark;
+    &:hover {
+      fill: $secondary-main;
+    }
+    &:active {
+      fill: $secondary-dark;
+    }
+  }
+}
+
+.small > svg {
+  width: 24px;
+  height: 24px;
+}
+
+.medium > svg {
+  width: 32px;
+  height: 32px;
+}
