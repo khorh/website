@@ -1,0 +1,24 @@
+@import "./styles/main.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  > div {
+    @include breakpoint-xxs {
+      @include grid-xxs;
+    }
+    @include breakpoint-xs {
+      @include grid-xs;
+    }
+    @include breakpoint-s {
+      @include grid-s;
+    }
+    @include breakpoint-m {
+      @include grid-m;
+    }
+    @include breakpoint-l {
+      @include grid-l;
+    }
+  }
+}

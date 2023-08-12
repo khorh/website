@@ -1,13 +1,11 @@
-import "./App.css";
-import Button from "./components/atoms/Button/Button";
+import { BrowserRouter } from "react-router-dom";
+import Footer from "./components/organisms/Footer/Footer";
 
 const App = () => {
   return (
-    <>
-      <Button type={"primary"}>Hello</Button>
-      <p>Hello</p>
-      <p>People</p>
-    </>
+    <BrowserRouter>
+      <Footer />
+    </BrowserRouter>
   );
 };
 
