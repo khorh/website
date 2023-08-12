@@ -9,7 +9,12 @@ import { BsPlay } from "react-icons/bs";
 import { BsShare } from "react-icons/bs";
 import { BsXCircle } from "react-icons/bs";
 
-const iconList = [
+export interface IIconList {
+  name: string;
+  svg: string;
+}
+
+const iconList: IIconList[] = [
   {
     name: "bs-arrow-left",
     svg: BsArrowLeft,

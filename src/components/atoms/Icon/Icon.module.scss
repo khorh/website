@@ -1,14 +1,15 @@
 @import "../../../styles/main.scss";
 
 .container {
+  cursor: pointer;
   font-size: 0;
   & > svg {
-    fill: $primary-dark;
+    fill: $base-dark;
     &:hover {
-      fill: $secondary-main;
+      fill: $primary-dark;
     }
     &:active {
-      fill: $secondary-dark;
+      fill: $primary-main;
     }
   }
 }
