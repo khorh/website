@@ -1,0 +1,17 @@
+@import "../../../styles/main";
+
+.container {
+  grid-column: 2 / -2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__copyright {
+  padding: 24px 0 16px;
+}
+
+.container__icons {
+  display: flex;
+  gap: 16px;
+}
