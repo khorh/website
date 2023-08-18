@@ -7,7 +7,7 @@ import { navLinks, NavLinksProps } from "./NavList";
 
 const Nav: FC = () => {
   // Nav links opens and closes
-  const [showNavLinks, setShowNavLinks] = useState(false);
+  const [showNavLinks, setShowNavLinks] = useState<boolean>(false);
 
   const toggleNavLinks = () => {
     setShowNavLinks(!showNavLinks);
